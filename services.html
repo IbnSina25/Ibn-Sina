@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أفق الرحلات | خدماتنا</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <a href="tel:+966501234567"><i class="fas fa-phone"></i> +966 50 123 4567</a>
+                    <a href="https://wa.me/966501234567"><i class="fab fa-whatsapp"></i> واتساب</a>
+                    <a href="mailto:info@afaq-travel.com"><i class="fas fa-envelope"></i> info@afaq-travel.com</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo.jpg" alt="أفق الرحلات">
+                    </a>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="destinations.html">الوجهات السياحية</a></li>
+                        <li><a href="offers.html">العروض</a></li>
+                        <li><a href="trips.html">الرحلات المنظمة</a></li>
+                        <li class="active"><a href="services.html">خدماتنا</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="banner-image" style="background-image: url('data:image/jpeg;base64,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');">
+            <div class="banner-content">
+                <h1>خدماتنا</h1>
+                <ul class="breadcrumb">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li>خدماتنا</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Intro -->
+    <section class="service-intro">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-content">
+                    <div class="section-header text-right">
+                        <span class="section-subtitle">خدماتنا المتميزة</span>
+                        <h2>خدمات سياحية متكاملة لرحلة مثالية</h2>
+                    </div>
+                    <p>في أفق الرحلات، نحرص على تقديم خدمات سياحية متكاملة تلبي كافة احتياجات عملائنا من بداية التخطيط للرحلة وحتى العودة. نسعى دائماً لتقديم أفضل الخدمات بأسعار تنافسية مع الاهتمام بأدق التفاصيل لضمان تجربة سفر مريحة وممتعة.</p>
+                    <p>يعمل فريق خبراء السياحة والسفر لدينا على مدار الساعة لتقديم الاستشارات والدعم اللازم لعملائنا، سواء كانوا أفراداً أو مجموعات أو شركات، لضمان حصولهم على تجربة سفر لا تنسى.</p>
+                    <div class="intro-statistics">
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-text">سنوات خبرة</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">30K+</div>
+                            <div class="stat-text">عميل سعيد</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-text">وجهة سياحية</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUVFxUVFRcXFRUVFRcVFRUXFxUVFRUYHSggGBolGxUVITEhJSkrLi4uFyAzODMsNygtLisBCgoKDg0OGxAQGy0lICUtLTctNS0vLS0tLS0tLTUvLS8tLS0tLS0tLS0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALIBHAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAIDBAYBBwj/xABAEAACAQIEAggCCAQFBAMAAAABAhEAAwQSITEFQQYTIlFhcYGRMqEHI0JSscHR8BQzcpIkYoKi4RUWQ/FTo7L/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAKxEAAgICAQQBAwIHAAAAAAAAAAECEQMSIQQTMVFBFCIyYXEjUpGhwdHw/9oADAMBAAIRAxEAPwDLdI7pbE3Z+yxQc9F0+e/rQ6KJ9IMCbN90L557Unfta9rxodXuQrVUeLP8nYgKVdrorQizkU4CkBTgKYrOAU4UgK6BTFZyK7FdiuxTFY2KUU6KUUCsbFKKdFdAoCxkUop8VyKAsZFKKfFcy0BYyK5FSRXCKQ7I4rkVJFKKQ7I4rkVJFcigdkcUop8VyKQ7GRTYqSlSCyOK5FPilFTQ0yOK4RUkVyKQ7I4pEU+uUDsZFcinkVyKVDsLccxgvX7lxRox08gAJ8NtqogVIbZ7jTltHuPsauKSVGTk27ZEBTgKsLg7h2tv/a36UjhGG4A82UfImnaJ5IAK7FTdUObD0k/8fOkiqC3xMNMp0TlrI1kA+VDlQVZGK6BTwtdy1ZFjIroFSBa6FpkuRHFKKmCV026YtiCKUVN1ddCUw2IYrkVPkpZKQbEGWuRU+WlkoHsQRSip+rrht0h7EEVwip8lc6ugexBFcip8lcNukOyAiuEVY6uudXSCyvlrmWrHV1zq6Q7K8VyKsZKaUpD2IYrhFTFKaVqR2RRXIqUrXMtBVkUVyKkK0stIdhJWcbOw8mIqxh1xFychuvAkwXaB4xXqf8HaK5TbSJmMoie8eNOwWBt2p6tcuYy2pMn1rifWKvB1/Qu/yPIHBO5J8yTTRbr1PiXRmxeOaChmWKwJEbRt3VieJcEuWmcZWKqfiiRB+Ek8txXTi6iE+DlzdNPHy+UA+rruSrnVUharoTOZoqhacFq0bMUhbppktMgS3Ui2Kmt26u2sOe+hyBRsoph6mTCURXC1KtiKnctYwQ+GqNsIRRW5bAqvcmqUrIcaB7WT3U3qqJKs6U5MJPOnZOvoFdVSFuipwVdXBUbIejBfVUjZouMEK6cLU7ldtgfqKQsUVNgVGy0th60Dv4euGxV8rUbJRY6KRtVw2qudXXRaosKK2HS2CWvZurRWYhIztAkKs6Ak8/OosQELE2wQhMqCZIB2BI3NXruEZrdxRde0ArMckDMQIUNI2k+FUuHYSLS9pmkSWbUknesFJ91+qN2o9pe7IDbppt0QNiuIMsnIH0PZOk+RHwnxrVy4MlGwcbdNNuiC4UkTmWT9gBsw/wBUQ3LaDrtpNMNqkpWNxooG3XClX+qrnVUWJJg826bkogbNc6mlsVqz1qzdFxZXUHao0vnb96UMwF02ySJM8p0n9fGiKAXBmXTfl8j4146VcM9yXPKL1q8DT7llSCp2YEN4giPwoUhK70Rwz51idRTarlCUr4ZhOL8OW1dZFmBBE7wRNUeqrQ9IsE63Mzahog/lQ/CcPuXTlRZI31AjlJmvShP7U2zysmP72kgYQaaLdaVuit8clO2xk+cGKJHoaOV4jzTX8ab6jGvkS6bI/gxgt1LbkUQxPDbltyjKZG0CZHIii/COEEasBJ5d3rVSyxSszjhk3QOsYG+wkWyfafYmarXw6tlYFSNwRBreWMFlIjcRIP41Nxjgy4hVk5Sux333BHpXOupSlz4Ot9I3Hh8nnJE8q6UnlWyHRFTtcb2G1SXeiiZeyzA+MEeoitfqYezH6TJ6MOMPUosmiTWIJB3BIPpXRarXcx7YOFk04WjV/qhXRbqdilAo9Qaa1o0Qy0ilLYeoKNk1z+Hok1mmm1T2DUGthxTP4eiFy1TMtGwtSiMNTxh6tE+FNzeFFsaSIrOGYnKsSwZBO3aUrr70G4Cn+HQc1zKfMMQa0eGulXVo+FlPsZoItprN3E2YJK3iVjftKsRy99NaxlLWdv0XS1oka3UT2qqYrH3EZZ6tg7KIQuWPIlSR2htsO+KJgT/6I/GrhkUiXEpm1U9i2XYJGYsQBrBk/wCb9ZpzLVrhOGL3kUAnWTHIDWfCqlLixRjboK2ehsiWuwe6B7STryq9xzhdvqCsKhUdkwBt+utGbFjIIknzpuItB1ytqvMHUH0Nea80nJNs9VYIqLSXk8wsYcu6ou7GB++6tZhejVlVi5225mSB5ADlRx8PaWCLagrtlAEaR+dMCTrPuKvJncvHBnj6dR/LkHWxVi07CMpiDqORHMGoLdWEoaTRsnRLjL6uCo3/AH8qjwOIKGK7cBjs6HTlO3fT7IzNtt7+fjU+OGTJNvZF7FqGTNAMa6idfKqnC7boSBbKgxLEQdudErNy2oLXWCINSxMADlr5xXMDjVuIHEFWnKRqCJMGahTpUU4W9iyGjnU6uDVHE3QNakt3xFKitvguOoYQYihhJVoHoauC7VbmaqHBE+S1bJjMTtUgutEiqytT0blToVlu2dBqaTuSarAGrQcGKVDTKHEuErdlvhfmRz8xWXyVvSw3oNxfhmcm4vxGJXv/AGK2w5a4Zhmw3zEzWWu9UaKjg96Jy+kgH51CMI2YJpmOwDKTpvsa6O5H2c3bl6KAtU4W6IXcEyfEI/fhTBZpbj0opG2aja2aJdTXOrpbD1BRsmmmx4UVa0Kia3T3FoC2s+FRlPCiLpUDJVKRDiVLdqTE5ZmCdgY0+dCeM8RF6+xtr2MrBiRrcIUAsSNtF+dHWSncI4ehuO2QG3aRgJBUNcZRJYn7KgATz1PnjlfKZlkT+Dz7iV251tkMoUIVJPgp3jlGbXetQyVZGGBJDjSSfE/EcxnYkzA5Ad5qvwu2zM6b5YgTJAMgr6EfOrx/aTDIpNQ+SMpRzosMrtodQBMad8VWPD2003oqMGMJZfEMWY27buUXWcokAeOlLNNa0dmCD2TQdmaaRVHgPEBfsW7sEZ1BIPI7H5ir15oE1wUekmVLr1GH8Kk6uTJO9Py1RJ5jhuM4rBHJiB19ofbX4wO8zuPP3rX8K4ravrmtOGHPkR4Mp1FZTB8W1EkNHJvHuePxqN+EoWN3D3Gs3hqsQJ7xGzD9mqh1EZ/lwy59POHg3xuU5m1BG4YR6Csnwvjl4OtjE24dvhuJqjaT2h9kwD/xWhS5t6mll8omAYwOPW462nU6qzEiQpyqx0IMj4Qas4O2EtooGyj56n8az+HxGW8n9Fwe9sgf/qpbmPvEqLbw6KSwcF0uAkBdJBVhlOxjX2yT5La4D9xFNORABsKZhoazh3PYa+tsxMqGdC2WY8Iodx3jmHwb28O9wvedwCiwWVXDMHYadiYUeY8a0UkZuLDtlRUxw6mq2HnnVtXodgqIThO41GbZG9Wg8mnPBppsTiiuNBUiWieXv+lSqgFSZqLBRBHSLjNrBWDevEnWFUbu0SFHdtudqxq8T4tj8OTZti0LrhUKfVhLSiXc3GMnMWVRl+62lehYjD2nKs6KxScpZQ2UncrOx0FSNeFFjox1n6Prd3Dra4hcbEXFYsrhmVkBH8sOe06zJ7XfoBT8H9GfCrTBlsNmGoJvXpB7xDCK093Eiql3GjvosdF9MNbChdwBHaZmPqxJJ9ajfC2u4e5oPiOMKOdB8Z0j+7rS2oNU/g0uIw1sDRo86pC3O1Y2/wARvXWCqTLEAAbknQAVucHwt7VtEPaIGpGvaOp+ZNXDJZlkxpcorGzUbWqZg8T1mLu2AwlLds5SdZli+nfDJV29aK71rGaZlKDQPezUL2avMKFcfxQs2Ljk5YUgRE5iIUCec1W1GetjQoIBGxEjyNXhfyWmtpAI7d1iJCDLI05mBoNpGvcRHQw9fhFKa9XKMpILDLsNN+zEGr+JslcljWblw3bpOhyJlJn0VB45zUSnskY54yiinfwYS0CZlg9xpMsTl+0eeh+VY+3i3TEMTM5t10kEbx3Rp6VvOP3czwDpAGndrp6w1ZPiKAX7LZQQSgjzYLr4a/jV7UrPK7bcnBeW/wC4b4Bjs98WwWYIrO5HJiMqK/8Al1Ygd6zyo1xxmGHu6b23HupFSdF+HCzh7coFuuiveIGrXSoksecbelT9IWAw7k9yr/c6r+dYSlbs+g6fD2saiCejpixb5AIB7aflRO5d5GqXArobDAD7Mj3OYfJhTmairLuhXuWu1dRz302acFoaBMxGN6HX0lkAueK9l4/pP5E0FBdDl3IOqtuPQ869YNzWNpBIJG8RMDfnQ/iViycxxCjLEgkTcMb5SNV8h3GuSWFfB6Eepa4krMVguL5SM3LQZvybcfOjuE4gjgQYMbHQye7kdqF9JuCpavWkttkt3bVt1DqXKvcMBW+6J5mYoRxDB3sPAZkObUFSHUgb7MSNxuKhOUfJo4wn44NiD9aPAH8/0qPiHE1sXMzTBXLpy1c6/Kg3AeIt1dy6+uSdye5dBPnVnF8VthHZmAL25UEjXsx+M1onyYSi0mbnjNx7Y4ciAGb+HVtCewLRkiOe1edfSZfI4uxA+DqBP+hWj516biOIWnv4SHSCWb4l0i2N9fGsj086N9dihiLFxHW69tL31iDq2GW2pGuoIgRvmI79CL5Ikj0BRU6gVGrCqmIxJOi6d7fpW1WZ2T4rFBTlUZn7tgP6jyruEcx2yCZY6CABOgHpFC3xCoIH/J8SedCOJMt+PrbiKMwYI2XNJGh8ivzpN0NKzT/x6F2UMCVyyAdpmJ9jXGxYrI4R7GHBFpQs7mSSY2knzpt3i5O1KytTUXcd41Sv8TA51mbuMdudV3YnnS2HqG8TxnuoXiOIO3OqzGonalsPUVy4eZmo8s1PgsK95gltSxOw/M9w8a3nAOjS2Id4e5/tX+nx8aEmxNpFTop0e6mL10fWfZX7gPM/5j8q1LMY0EmNB4+dLJzrL9JOlf8ADXTYRVzlQQznsBmkgECOQ76qUowVsmEZTlSMFwiyessMsnE9faLzcfMSbi9aGkZdjcBHICvV+JWgEY6aCvPeG3bSYo4o5RcKy33CYAAVeR7IjyFFr3S0Yi3etlcmhytmEHKwBHgZrmjnjFPk6cmCUmuAvigLclyFA5kgD3NVeKYS29gM0OrQRHaHgQV30JqLpexv2LRScty21wwjOTKLpoQAO1zO4FQ9Dr7Pw20Cqzbc2gAMoy22hdDPKK655bi0cUMVSL3Ra0iNcFpYWBuCNeUk+Zqbilg/WaS1xlRYH2NIHz/2irvDF1aQFgLz03ahvSjiDKBbs/zXkK8iEEDNc8wDp3b8oMQfBl1aWvIBx+IDX7pU9lOsU90paYRPmaEYvEW16p3VmHaECBuAQZPkdqIX8KlhGtq3ZWxcYknmzKDJPPtb0LvnD3LIDXJKqryhPeQCp2Na5slQr2cPQ4FPqE34Tt/9+56B0axwxFgOEKwSnagk5dJ0oJ9InF1sJatZLjG6zN2EzCEUwCZ3zlD5A1a6IcVso38NnTKi5p19WuOdOWp7zWZ6a9TxDiNq31yi2n1YYOAIz/WEMDvKv6KpG4rGEriezkilIIdBOIi71tnq7i5MrdtQs9kIY1/yj5+Vaa/hgBJEbD1JAHzIrC9H8PawHE2trdBtsBbzG4GBDhGUkljrmaOZ7J2oj0t6VOr5bHVsiXFJZQ11XyENBcQFAIghM7A7wN7c9SFj2NQcFFLqqZ0b4t/GWBeyqupBVbguQR3kAR5ETFEerp7WLSjKY3iio+W323MdowQphoOpEgiRA9AdqoWle9cBLPlP2yJ5iAiju1113P8ATWZ4lxBrZAKlQCQwVewskjymdSTvGs6VfwnWdYkQVcqAR2oGaMywIGoOo019sJTk/AbL4Nxh8CjX705nCrbswxLArkVyCDuO0NOW1du8Fw6qesw9s2+bG2vZj77Rt/m5c++hDrYu376XBrZu5swYqdAqgGNx2R+FDOOcat3g9kAqoH2YV2XaZGqjwjz7qN0oluSslfo7h2xzYVQ62TZS4yq7RmYvtM6dlKt4z6OcIUMNe011uA6TLAFl00mOQNZHGdIbOGe9fdHbsJZtKjtbl1Rdc+6rqx29KHcP+kl7zrZuC5ZUt2XtXrpYE6DPnJzL6gDeKtJNXQ9pfDND/wBmcPViWu3nhGUPmGfPM9ZK9mAvZy6zTujHRXDo6XluPdv2jaOQ5MgZXSSpGpAUGAdo8KFYvpLiED/4i6AiG4ouC22aD8IzL8Ua03DdKeIoq3M8BgpnqbP2gIWer+LUab61nFPa2+P2JUpPwz2DF4mPyHM+JrP8T43G1AcP0jxGItkYhUTuyhlc7asCYAoLisaA0E6dxraU/Q4w9hu5xN2Oh9aab7HmaEJxJO+pV4lb+9+FYuTN1FBMNTpoUeKIPtD3qHHcaW0guMGyE5cwEiTO8agabxRbEw3NRveArM4LpNbv3rVlCZvOttSQQMztlWee/hXo2H6G2rYz4q/IG4TsjyzHU1ST8mcpxRmVuSYRZYnkNSfStFwXoncumbx6sDdd39uXmfagd/iyI8W7RtoVJt5GAbxzT2iTruRzqKxxrK5YOwdSIC5QGEkGSdQA0QNoBrHutPwZvL6PSUxOEwf1YIU6EgDMxnbMe/wqH/u+xJADkjbYT476c/avMMdxF0uZczZLupmMpbVmXMToSJ5yTQ8cV6p5hSSQSQORUEqJ5HTlypPJkfgz2Z6/wzpbZvXOrIyknsmQRHj3GYHqKzvSHhvWcQum8v1PUXWBJH2MOEJ0MghrgjxFZBuKXLaJetm41rPIjSHiCsxp9nTy79S3DuI/xUm4lxlO5l5E6lYBg/CDrtPcYKeSVLbk6On5dewPhsO2TKA5cGQZknfKJnbX/mtV0F4V1OFuLdSGLsVLdpiujAmJg5mbQ699BlwTI5JdUGrAC5zGokArr5zRXBcYt2bS2QSco3RrepJLGc3Mk6+ZrlzStao79ZE6NnstbaGyPdyjqWuQjhCvYWAO0H1O1QdELuTAX+z/AC8U8DKU/wDEjRHnSxdx5BtqzFhGpyqSQpXMUIn4hppvzoXw+7dVXS2FFu522UdoZ4IBzamYy8yK6oZP4fPDOZ4XKXBqcRxFkXsLbC3bbFzcuMkKFJ7IymRqZPICYO1Bscuay6KuFU9Xetgm4SiZUGb6spGWbhLDkpU67VS/6hiUUyBlRcqhjllQCDBBBnVSNeVN6PcWa7bKyxdRdJ1fUXCgUypgdrT1kczWkZcWjPJi5+5DsTwGLYtl7Y6sXgua62UBXXLK5TIQHXXTs78gvFsOy3GspbSEdbYYMSVXPoO5iANdPet7xDh2ILdk5JAYkNpByzMx+cVncZanNN605BLSXTNnUkdrtDkNooWRzjyKHTxxz3j5+fmwXiL1uxgbzX3U3Lith1VAFlHUS7EGTlkzpzHKazZZrFwHNi1YKO1bvOGkqNiJMcj5GtUGusVUrE6EkCO0dycu0wfQVPfi2xa9hreKEZSrsGG85+yJIPce8Va9Dkrt2jGti+uuSXxWbLM3LhdtBG7R2YeO7teNE8RbtgIA1uFEKw60oIGipizAU9yoAg5zpRpBavE9Vg0w6KBmW1a6xic0gorjKNQDBEaTVbi4dDnuDGW5XL1lxbV1SvdcsKerRe6ATqdKib5ovHGlZuvo3vf4KGcaM0TdtvEtyygaEnckyTWlK15Bw7HKtrR7bKW7WS2yacyQwA9AIrW8E40/VkK5YKxGZjZBbQHNBOm9NZWnVHNOVSMra4fhlZWjtICBmuiJIIJYc9/Clwk28NfDdbCHNIRiygHO5BEHmSQJGs1d/iV8PUj9Kr8V4pbt2XuEW2KKSAQG12HpNJUvBuumrloM2eoF57gvhblwF2QEMe0JDM2oUgTAkRrInUiMJh8G0v8AxBVjpmY3Dc21MqCvanXv8IFZ5emVhWIw1lAxSDfyMHVipFwramImRvoPnk8XiXDrbW5EwWPZI0mIETsD5yKpQszcI3ZqOk+Dt4hLkXQrC4GSUZUeQqHYHLsD70O4H0N+tU3sRZCqQQA/druwHyn0opgekNm3aUXLSs4DKXXqLRYAkA6sCDG8c5oTiONYBviwdx/6rzkfNzVJvwaOCpcmk6UrhsPhGs21S7190CVebitkaGmYiVXaBXOjnF8OcIqsrfVO0C5dEhwoVnRUggEE9kyN96zuG6S2bZy2eH2+1pBcuT5AoflRO1icTcEjhVtfBlyzPOGApVSoz7Kfj/I670h4dsHuBp7RPWkeyx48qkwjcNuBc2JTMCCWe5cWdZ+EwAOXl41y9wjFMNMHhBO+gkeERU/DuhHW/wA+1aQcjaeG/tywfehRVeQljkvNgHGdJ8KMVaZMEvV2DcUKLmZbzFoW5cYqS4AEgEnWNYmfRX6Q4WOxf4eG/wBB+QrM4r6MBE2r7DwcAj3ER86F/wDZWPtSyTpztvr+Rqmr+WiHjRrzxhFJZsXh1DzogOUk75exWPxOBbD4bEKLq3bLsMoNq4YLsBo5KheR56gVHcxfErIh7l9QP/kmP/tGtZ7juOu3XD3bhLqAE0VezqZ7IAmecU1EpcG76HcCNq7ZxIwruElrTFkVSrZijPsTcAYDaNFit5e4jjLgKtZshTsC8keYgg+9eIdFekl3DXy6ksrznQsQpJ1zeBHf41vsJ9INvTPZceKsrfjFDjaq2ZyxqTsnxXRPEs4cNZEdoNmYMGUysLBWNakv9H8ZdTJc6lSFABQsMxBJhtNiT8hp3EMF00wL/FddCfvo34rIo9guJYa7/KxFpz3B1J9pml21Q9EYm10LxDW2RxbnQpF1o3kjVdBoNfOpMN0HvrbuiE6y4ANLkLCkFZOWdwK9ES3FTAUu0g1RgOG9D7wtm3fVHUkkDrSQvIQCvcBPlTk6GYhQypcVEJzQHY6wR93T7PPlW+IrlLsxscVq7RjMN0OKbkXJjNnY8togT86kv9GXJBFmySuaCTB15AlSdY1rYhadkoeCLd8lNtmKbhOPzTlsAL8MOwGi5QYy7xzqAcBxoCgW7B7ybjDTeAAvjW8yUslHYgPeXtmK/wCiYsjW3YWIgZixI5jMV0puB4Hi7KXESzh/rAAS1xidGkAdmI9K2+SlkoWCK8Cbk/LZlcRgcbdgOLYAUA5bjDMOatpqDVM9Gb3JUGw1edOZ+CttkpZKS6eC8D3l7Zjv+i4hQFSzZgMTrcYkgsWPLxNQXuA4yOytmdd2PoNq3GSlkqu0vb/qQY/A8AvAEXZE7Czde1/cwYE+1QHom5ZmRruGJPxW8Q1wuBzu5spJ5RJ0Arb5KWSn20aKbSoxB6OY1Ji9ZvggfzLYRgQymQyg5pAYdo8weVC+MdDcVcuZ7duwAVUENddjmAgwY2r0vJSyU+2jNq3Z4ZcFxdbmItWx5a+7H8qHYvieHylWvXr06EL2VPtAPzrLM0mSZ8dz70gKSidLyWWr16z/AOOzl8WuMT7CPxqqwkyST6k+1FeG8Av3fhSB95uyPTmfQVrOF9EbSQbn1jd2ye3P1pSmkVDp5z+DE4Hh926YtW2c84BIHmdh61q+F9Brhg3nCj7q6n1Y7exrZ4ZAgCqAoGwAAA9KtK/7isZZW/B2Y+jivPJS4dwS3YH1SqveYlj5sdTVxbcfaJ9KlB5n57e+1TYe2X+Ead/L076zTbOiUIxXpHbC951/fKr1u3rB0P41Nh8EB4n9+1XEw4O//NbxieblzXxEgTDd0D0FObAjmzfL9KuW7ZG+3f8ArVpbVao5WBzgJEFnj+oj8KrYvo1hboi5YRueqg+s1pBYpww4qhGFv/R5gjqtvKTzV3HymKG3voytn4LrL5hW/ACvTRhxThZFAjyG99F137N9D/UhX8CaoX/oxxY26lvK4Qf9yivbharvVUAeJ4bgPGcN/LF8AclvK6/2FiPlRPD9KOL2dL2Ee4O82HU/3IMvyr1c2qYbRpgYLBfSJZOmIsXrB5nKXUfIN/trV8Nx9nELns3FuLtKmYPcRuD4GiBSktugBqLUuSnIlTZKAK+SlkqxkpZKAK+SlkqxkpZKAK+SlkqxkpZKAK+SlkqxkpZKAK+SlkqxkpZKAK+SlkqxkpZKAPlzAdGrr6v2B3bt7DatTwzglm1BCS33nIJ9By9BVhD31OpPdXJKTZ7GPBCHKRdttHP9+tTDz/flpVAXPGpQY0JA+fyH61B0rzReV48PMx7bGnm5qNCSdgBr7mDHmKqYdJ2OXvPP0AolhWtj+WCTzP6t+lNRbMsueGP9X6/2TYXB83P+kbf6iN6NWTyA27qoWD3+w2/U1ftOOVaRikeblzTyO5Fq2T4VbtVUsk1ctrWiMGWEqW2lNt1YSqRJ1Vp4SuqKeKoQ3JSyU+lQAzLSy0+KVMCMpSyVJXRQBAbdLq6niuUARqlOy06u0AMy0stPpUAMy0stPpUAMy0stPpUAMy0stPpUAMy0stPpUAMy0stPpUAeAofxqdTSpVxej3/AJy/odA1qVt6VKl8lrjCq/lkWU1dQdjMjkfSimH3pUq3Z4SJ7R3/AHyq7gz+FKlQAUwlX7VKlVITLSVYSlSqkSyZKfSpVRJ0Uq5SpgdrhpUqAOU4UqVACNNrtKgBCnUqVACpUqVACpUqVACpUqVACpUqVACpUqVACpUqVAH/2Q==');">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services -->
+    <section class="main-services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">خدماتنا الرئيسية</span>
+                <h2>ماذا نقدم لعملائنا</h2>
+                <p>نوفر مجموعة متنوعة من الخدمات السياحية التي تلبي احتياجات مختلف العملاء</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>حجز تذاكر الطيران</h3>
+                    <p>نوفر خدمة حجز تذاكر الطيران على كافة شركات الطيران العالمية بأسعار تنافسية، سواء كانت رحلات مباشرة أو رحلات ترانزيت، درجة سياحية أو درجة رجال الأعمال.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> أسعار تنافسية ومقارنة بين الشركات</li>
+                        <li><i class="fas fa-check"></i> تأكيد الحجز الفوري</li>
+                        <li><i class="fas fa-check"></i> إمكانية اختيار المقاعد المفضلة</li>
+                        <li><i class="fas fa-check"></i> خدمة طلب وجبات خاصة</li>
+                    </ul>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <h3>حجز الفنادق</h3>
+                    <p>نقدم خدمة حجز الفنادق والمنتجعات بمختلف فئاتها وتصنيفاتها في جميع أنحاء العالم، مع توفير أفضل الأسعار والعروض الحصرية لعملائنا.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> شبكة واسعة من الفنادق حول العالم</li>
+                        <li><i class="fas fa-check"></i> أسعار تنافسية وعروض حصرية</li>
+                        <li><i class="fas fa-check"></i> إمكانية اختيار نوع الغرفة والإطلالة</li>
+                        <li><i class="fas fa-check"></i> تأكيد الحجز مباشرة</li>
+                    </ul>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>البرامج السياحية</h3>
+                    <p>نصمم برامج سياحية متكاملة تناسب مختلف الأذواق والميزانيات، بدءاً من تحديد الوجهة وحتى العودة، مع الاهتمام بأدق التفاصيل لضمان تجربة سفر مميزة.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> برامج متنوعة لمختلف الوجهات</li>
+                        <li><i class="fas fa-check"></i> جولات سياحية مع مرشدين محترفين</li>
+                        <li><i class="fas fa-check"></i> أنشطة وفعاليات متنوعة</li>
+                        <li><i class="fas fa-check"></i> برامج مخصصة حسب الطلب</li>
+                    </ul>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3>خدمات التأشيرات</h3>
+                    <p>نساعد عملائنا في الحصول على تأشيرات السفر إلى مختلف دول العالم بكل سهولة ويسر، مع تقديم الاستشارات اللازمة حول متطلبات التأشيرة وإجراءاتها.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> استشارات حول متطلبات التأشيرة</li>
+                        <li><i class="fas fa-check"></i> مساعدة في تجهيز الأوراق المطلوبة</li>
+                        <li><i class="fas fa-check"></i> متابعة طلب التأشيرة</li>
+                        <li><i class="fas fa-check"></i> تسليم التأشيرة في الوقت المحدد</li>
+                    </ul>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>تأجير السيارات</h3>
+                    <p>نوفر خدمة تأجير السيارات في مختلف دول العالم من خلال شراكتنا مع أفضل شركات تأجير السيارات العالمية، مع توفير مختلف الفئات والموديلات.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> مجموعة متنوعة من السيارات</li>
+                        <li><i class="fas fa-check"></i> أسعار تنافسية وتغطية تأمينية</li>
+                        <li><i class="fas fa-check"></i> استلام وتسليم في المطارات</li>
+                        <li><i class="fas fa-check"></i> سائق خاص (اختياري)</li>
+                    </ul>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>رحلات شهر العسل</h3>
+                    <p>نقدم باقات خاصة لشهر العسل مصممة لتوفير تجربة رومانسية لا تنسى للعرسان الجدد، مع الاهتمام بالتفاصيل الصغيرة التي تجعل هذه الرحلة مميزة.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> وجهات رومانسية مختارة</li>
+                        <li><i class="fas fa-check"></i> إقامة في فنادق ومنتجعات فاخرة</li>
+                        <li><i class="fas fa-check"></i> أنشطة رومانسية خاصة</li>
+                        <li><i class="fas fa-check"></i> مفاجآت وهدايا خاصة</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialized Services -->
+    <section class="specialized-services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">خدمات متخصصة</span>
+                <h2>خدمات إضافية مميزة</h2>
+                <p>نوفر خدمات متخصصة تلبي احتياجات محددة لعملائنا</p>
+            </div>
+            <div class="specialized-grid">
+                <div class="specialized-item">
+                    <div class="specialized-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="specialized-content">
+                        <h3>خدمات الشركات والمؤسسات</h3>
+                        <p>نقدم خدمات سفر متكاملة للشركات والمؤسسات تشمل حجز تذاكر الطيران، الفنادق، تنظيم المؤتمرات والاجتماعات، واستقبال الوفود الرسمية.</p>
+                        <a href="https://wa.me/966501234567" class="btn-outline">استفسر الآن</a>
+                    </div>
+                </div>
+                <div class="specialized-item">
+                    <div class="specialized-icon">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <div class="specialized-content">
+                        <h3>الطيران الخاص والرحلات المستأجرة</h3>
+                        <p>نوفر خدمة الطيران الخاص واستئجار الطائرات لرجال الأعمال والشخصيات الهامة الذين يبحثون عن الخصوصية والراحة في سفرهم.</p>
+                        <a href="https://wa.me/966501234567" class="btn-outline">استفسر الآن</a>
+                    </div>
+                </div>
+                <div class="specialized-item">
+                    <div class="specialized-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="specialized-content">
+                        <h3>رحلات تعليمية وثقافية</h3>
+                        <p>نصمم رحلات تعليمية وثقافية للمدارس والجامعات والمؤسسات التعليمية، مع برامج تثقيفية وتعليمية متنوعة تناسب مختلف المراحل الدراسية.</p>
+                        <a href="https://wa.me/966501234567" class="btn-outline">استفسر الآن</a>
+                    </div>
+                </div>
+                <div class="specialized-item">
+                    <div class="specialized-icon">
+                        <i class="fas fa-medkit"></i>
+                    </div>
+                    <div class="specialized-content">
+                        <h3>السياحة العلاجية</h3>
+                        <p>نقدم خدمات متكاملة للراغبين في السياحة العلاجية، بدءاً من تحديد المستشفيات والمراكز الطبية المناسبة، وحتى تنظيم الإقامة والمواصلات والمتابعة الطبية.</p>
+                        <a href="https://wa.me/966501234567" class="btn-outline">استفسر الآن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Process -->
+    <section class="service-process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">كيف نعمل</span>
+                <h2>خطوات الحصول على خدماتنا</h2>
+                <p>عملية بسيطة وسلسة للحصول على خدماتنا بكل سهولة ويسر</p>
+            </div>
+            <div class="process-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h3>التواصل والاستفسار</h3>
+                        <p>تواصل معنا عبر الهاتف، الواتساب، أو البريد الإلكتروني للاستفسار عن الخدمات المطلوبة.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h3>تحديد الاحتياجات</h3>
+                        <p>سيقوم أحد خبراء السفر لدينا بالتواصل معك لتحديد احتياجاتك ومتطلباتك بدقة.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h3>تقديم العروض والخيارات</h3>
+                        <p>نقدم لك مجموعة من العروض والخيارات المتاحة التي تناسب احتياجاتك وميزانيتك.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h3>اختيار العرض المناسب</h3>
+                        <p>بعد مراجعة العروض المقدمة، يمكنك اختيار العرض الذي يناسبك وتأكيد الحجز.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">5</div>
+                    <div class="timeline-content">
+                        <h3>الدفع وتأكيد الحجز</h3>
+                        <p>إتمام عملية الدفع بالطريقة المناسبة لك وتأكيد الحجز وإرسال تفاصيل الخدمات المحجوزة.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">6</div>
+                    <div class="timeline-content">
+                        <h3>الدعم أثناء الرحلة</h3>
+                        <p>نقدم الدعم والمساعدة طوال فترة رحلتك لضمان تجربة سفر مريحة وممتعة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Packages -->
+    <section class="service-packages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">باقات خدماتنا</span>
+                <h2>باقات متكاملة لتجربة سفر مثالية</h2>
+                <p>نقدم باقات خدمات متكاملة تناسب مختلف الاحتياجات والميزانيات</p>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>الباقة الأساسية</h3>
+                        <div class="package-price">
+                            <span>تبدأ من</span>
+                            <div class="price">2,500 دينار</div>
+                        </div>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> حجز تذاكر الطيران</li>
+                            <li><i class="fas fa-check"></i> حجز الفندق</li>
+                            <li><i class="fas fa-check"></i> استقبال من وإلى المطار</li>
+                            <li><i class="fas fa-check"></i> مساعدة في استخراج التأشيرة</li>
+                            <li class="not-included"><i class="fas fa-times"></i> جولات سياحية</li>
+                            <li class="not-included"><i class="fas fa-times"></i> مرشد سياحي</li>
+                            <li class="not-included"><i class="fas fa-times"></i> تأمين سفر</li>
+                        </ul>
+                        <a href="https://wa.me/966501234567" class="btn">استفسر الآن</a>
+                    </div>
+                </div>
+                <div class="package-card featured">
+                    <div class="package-badge">الأكثر طلباً</div>
+                    <div class="package-header">
+                        <h3>الباقة المميزة</h3>
+                        <div class="package-price">
+                            <span>تبدأ من</span>
+                            <div class="price">4,500 دينار</div>
+                        </div>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> حجز تذاكر الطيران</li>
+                            <li><i class="fas fa-check"></i> حجز الفندق (4 أو 5 نجوم)</li>
+                            <li><i class="fas fa-check"></i> استقبال VIP من وإلى المطار</li>
+                            <li><i class="fas fa-check"></i> خدمة استخراج التأشيرة الكاملة</li>
+                            <li><i class="fas fa-check"></i> جولات سياحية للمعالم الرئيسية</li>
+                            <li><i class="fas fa-check"></i> مرشد سياحي (لعدد محدد من الأيام)</li>
+                            <li class="not-included"><i class="fas fa-times"></i> تأمين سفر شامل</li>
+                        </ul>
+                        <a href="https://wa.me/966501234567" class="btn">استفسر الآن</a>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>الباقة الشاملة</h3>
+                        <div class="package-price">
+                            <span>تبدأ من</span>
+                            <div class="price">7,500 دينار</div>
+                        </div>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> حجز تذاكر الطيران (درجة رجال أعمال)</li>
+                            <li><i class="fas fa-check"></i> حجز فندق 5 نجوم</li>
+                            <li><i class="fas fa-check"></i> استقبال VIP من وإلى المطار</li>
+                            <li><i class="fas fa-check"></i> خدمة استخراج التأشيرة الكاملة</li>
+                            <li><i class="fas fa-check"></i> برنامج سياحي متكامل</li>
+                            <li><i class="fas fa-check"></i> مرشد سياحي طوال فترة الرحلة</li>
+                            <li><i class="fas fa-check"></i> تأمين سفر شامل</li>
+                        </ul>
+                        <a href="https://wa.me/966501234567" class="btn">استفسر الآن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">الأسئلة الشائعة</span>
+                <h2>أسئلة يتكرر طرحها</h2>
+                <p>إجابات على الأسئلة الأكثر شيوعاً حول خدماتنا</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>كيف يمكنني حجز خدماتكم؟</h3>
+                        <div class="toggle-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>يمكنك حجز خدماتنا من خلال التواصل معنا عبر الهاتف، الواتساب، أو البريد الإلكتروني. سيقوم أحد مستشاري السفر لدينا بالتواصل معك وتقديم الخدمات المطلوبة حسب احتياجاتك.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>ما هي طرق الدفع المتاحة؟</h3>
+                        <div class="toggle-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نوفر عدة طرق للدفع منها: التحويل البنكي، الدفع بالبطاقة الائتمانية، الدفع عند الاستلام (لبعض الخدمات)، بالإضافة إلى خدمة التقسيط المريح بالتعاون مع بعض البنوك المحلية.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هل يمكنني إلغاء الحجز؟ وما هي سياسة الاسترداد؟</h3>
+                        <div class="toggle-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، يمكن إلغاء الحجز حسب سياسة الإلغاء والاسترداد الخاصة بكل خدمة. عموماً، يتم استرداد المبلغ بشكل كامل في حال الإلغاء قبل 30 يوم من موعد السفر، واسترداد 50% عند الإلغاء قبل 15 يوم، ولا يوجد استرداد عند الإلغاء قبل أقل من 7 أيام من موعد السفر.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هل تقدمون خدمات للشركات والمجموعات؟</h3>
+                        <div class="toggle-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نقدم خدمات متكاملة للشركات والمجموعات تشمل تنظيم الرحلات الجماعية، المؤتمرات، الاجتماعات، والرحلات الترفيهية للموظفين. نوفر أسعاراً خاصة للمجموعات وخدمات مخصصة حسب احتياجات كل شركة.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هل توفرون خدمة المساعدة أثناء السفر؟</h3>
+                        <div class="toggle-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نوفر خدمة الدعم والمساعدة على مدار الساعة طوال أيام الأسبوع أثناء سفرك. يمكنك التواصل معنا في أي وقت عبر الهاتف أو الواتساب للحصول على المساعدة اللازمة في حالة مواجهة أي مشكلة أثناء رحلتك.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هل تقدمون خدمة تأمين السفر؟</h3>
+                        <div class="toggle-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، نوفر خدمة تأمين السفر بالتعاون مع أفضل شركات التأمين المحلية والعالمية. تشمل خدمة التأمين تغطية النفقات الطبية الطارئة، إلغاء الرحلة، فقدان الأمتعة، وغيرها من الخدمات التي تضمن لك رحلة آمنة ومطمئنة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>هل أنت مستعد لبدء رحلتك المثالية؟</h2>
+                <p>تواصل معنا الآن للاستفسار عن خدماتنا وحجز رحلتك القادمة</p>
+                <a href="https://wa.me/966501234567" class="btn"><i class="fab fa-whatsapp"></i> تواصل معنا عبر واتساب</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <img src="/api/placeholder/200/80" alt="أفق الرحلات">
+                        </div>
+                        <p class="footer-desc">شركة رائدة في مجال السياحة والسفر، نقدم لكم أفضل العروض والخدمات بأسعار مميزة ونسعى دائماً لتحقيق رضا عملائنا.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>روابط سريعة</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="destinations.html">الوجهات السياحية</a></li>
+                            <li><a href="offers.html">العروض</a></li>
+                            <li><a href="trips.html">الرحلات المنظمة</a></li>
+                            <li><a href="services.html">خدماتنا</a></li>
+                            <li><a href="about.html">عن الشركة</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>بعض وجهاتنا</h3>
+                        <ul class="footer-links">
+                            <li><a href="destinations.html">دبي</a></li>
+                            <li><a href="destinations.html">تركيا</a></li>
+                            <li><a href="destinations.html">ماليزيا</a></li>
+                            <li><a href="destinations.html">جزر المالديف</a></li>
+                            <li><a href="destinations.html">أذربيجان</a></li>
+                            <li><a href="destinations.html">مصر</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>تواصل معنا</h3>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-map-marker-alt"></i> بابل - الحلة - شارع 40 - قرب فاملي سنتر - مجاور صيدلية العاج Al Hillah, Iraq</li>
+                            <li><i class="fas fa-phone"></i> <a href="tel:+9640782 998 0779">0782 998 0779</a></li>
+                            <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/966501234567">+964 0782 998 0779</a></li>
+                            <li><i class="fas fa-envelope"></i> <a href="mailto:Tickets@ibnsina.iq">Tickets@ibnsina.iq</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>جميع الحقوق محفوظة &copy; 2025 أفق الرحلات | تصميم وتطوير: ياسر عمار</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
